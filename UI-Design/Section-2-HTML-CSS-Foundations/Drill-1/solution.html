@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Drill 1 - Semantic Structure</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+
+  <body>
+    <header>
+      <h1>My Favorite Media Collection</h1>
+    </header>
+
+    <nav>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </nav>
+
+    <main>
+      <article>
+        <h2>About My Collection</h2>
+        <p>This page lists my favorite movies, books, and a table for HTML practice.</p>
+        <img src="https://picsum.photos/800/400" alt="Random scenic image for semantic demo">
+      </article>
+
+      <section>
+        <h3>Top 3 Movies (Ordered List)</h3>
+        <ol>
+          <li>Inception</li>
+          <li>Interstellar</li>
+          <li>The Shawshank Redemption</li>
+        </ol>
+
+        <h3>Top 3 Books (Unordered List)</h3>
+        <ul>
+          <li>The Alchemist</li>
+          <li>Atomic Habits</li>
+          <li>Rich Dad Poor Dad</li>
+        </ul>
+
+        <h3>Sample Table</h3>
+        <table>
+          <thead>
+            <tr>
+              <th scope="col">Name</th>
+              <th scope="col">Type</th>
+              <th scope="col">Year</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row">Inception</th>
+              <td>Movie</td>
+              <td>2010</td>
+            </tr>
+            <tr>
+              <th scope="row">The Alchemist</th>
+              <td>Book</td>
+              <td>1988</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+    </main>
+
+    <aside>
+      <p><strong>Tip:</strong> Semantic HTML helps screen readers and improves SEO.</p>
+    </aside>
+
+    <footer>
+      <p>&copy; 2025 Prajwal Patil | HTML & CSS Foundations</p>
+    </footer>
+  </body>
+</html>
