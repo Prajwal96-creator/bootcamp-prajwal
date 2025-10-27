@@ -1,0 +1,78 @@
+/* ---------- Base Tokens (Light Theme) ---------- */
+:root {
+  --bg: hsl(210, 20%, 98%);
+  --surface: hsl(210, 20%, 94%);
+  --text: hsl(210, 10%, 15%);
+  --accent: hsl(200, 80%, 50%);
+}
+
+/* ---------- Dark Theme Tokens ---------- */
+:root[data-theme="dark"] {
+  --bg: hsl(210, 15%, 10%);
+  --surface: hsl(210, 10%, 20%);
+  --text: hsl(210, 20%, 90%);
+  --accent: hsl(200, 90%, 65%);
+}
+
+/* ---------- General Styles ---------- */
+body {
+  font-family: system-ui, sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  margin: 0;
+  padding: 2rem;
+  transition: background 0.3s, color 0.3s;
+}
+
+/* Hero Section */
+.hero {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: var(--surface);
+  padding: 1rem 2rem;
+  border-radius: 1rem;
+  box-shadow: 0 4px 10px hsl(210, 20%, 90%);
+  transition: background 0.3s;
+}
+
+/* Button */
+#theme-toggle {
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 8px;
+  background: var(--accent);
+  color: white;
+  cursor: pointer;
+  font-weight: bold;
+  transition: transform 0.2s;
+}
+#theme-toggle:hover {
+  transform: scale(1.05);
+}
+
+/* Container + Cards */
+.container {
+  display: grid;
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.card {
+  background: var(--surface);
+  padding: 1.5rem;
+  border-radius: 1rem;
+  box-shadow: 0 2px 8px hsl(210, 20%, 90%);
+  transition: background 0.3s;
+}
+
+/* Code Block */
+pre {
+  background: hsl(210, 15%, 90%);
+  padding: 1rem;
+  border-radius: 8px;
+  overflow-x: auto;
+}
+:root[data-theme="dark"] pre {
+  background: hsl(210, 10%, 25%);
+}
