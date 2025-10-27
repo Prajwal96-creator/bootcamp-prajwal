@@ -1,0 +1,82 @@
+/* ---------- Light Theme Tokens (OKLCH) ---------- */
+:root {
+  --bg: oklch(0.97 0.02 240);
+  --surface: oklch(0.93 0.03 240);
+  --text: oklch(0.20 0.01 260);
+  --accent: oklch(0.62 0.15 260);
+}
+
+/* ---------- Dark Theme Tokens (OKLCH) ---------- */
+:root[data-theme="dark"] {
+  --bg: oklch(0.15 0.02 250);
+  --surface: oklch(0.25 0.03 250);
+  --text: oklch(0.92 0.02 250);
+  --accent: oklch(0.72 0.12 260);
+}
+
+/* ---------- Global Styles ---------- */
+body {
+  font-family: system-ui, sans-serif;
+  background-color: var(--bg);
+  color: var(--text);
+  margin: 0;
+  padding: 2rem;
+  transition: background 0.3s, color 0.3s;
+}
+
+/* Hero */
+.hero {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: var(--surface);
+  padding: 1rem 2rem;
+  border-radius: 1rem;
+  box-shadow: 0 4px 10px oklch(0.85 0.05 240);
+  transition: background 0.3s;
+}
+
+/* Theme Toggle Button */
+#theme-toggle {
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 8px;
+  background: var(--accent);
+  color: white;
+  cursor: pointer;
+  font-weight: bold;
+  transition: transform 0.2s, background 0.3s;
+}
+#theme-toggle:hover {
+  transform: scale(1.05);
+}
+
+/* Card Layout */
+.container {
+  display: grid;
+  gap: 2rem;
+  margin-top: 2rem;
+}
+.card {
+  background: var(--surface);
+  padding: 1.5rem;
+  border-radius: 1rem;
+  box-shadow: 0 2px 8px oklch(0.85 0.05 240);
+  transition: background 0.3s;
+}
+
+/* Accent Button */
+.accent-btn {
+  padding: 0.75rem 1.25rem;
+  background: var(--accent);
+  border: none;
+  color: white;
+  font-weight: 600;
+  border-radius: 8px;
+  cursor: pointer;
+  margin-top: 0.5rem;
+  transition: transform 0.2s;
+}
+.accent-btn:hover {
+  transform: scale(1.05);
+}
