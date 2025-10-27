@@ -21,11 +21,54 @@
       </div>
     </div>
     <nav class="sidebar-nav">
-      <div class="nav-item">
-        <a class="nav-link active" href="#ui-design" data-section="ui-design">
-          <i class="fas fa-palette"></i>
-          UI Design
-        </a>
+      <!-- Section 1 -->
+      <div class="nav-section">
+        <div class="nav-section-header" data-section="section-1">
+          <div class="nav-section-title">
+            <div class="nav-section-number">1</div>
+            <span>Basics</span>
+          </div>
+          <i class="fas fa-chevron-down nav-section-icon"></i>
+        </div>
+        <div class="nav-drills">
+          <a href="UI-Design/Section-1-Basics/Drill-1/solution.html" class="nav-drill-link">Foundation Concepts</a>
+        </div>
+      </div>
+
+      <!-- Section 2 -->
+      <div class="nav-section">
+        <div class="nav-section-header" data-section="section-2">
+          <div class="nav-section-title">
+            <div class="nav-section-number">2</div>
+            <span>HTML & CSS Foundations</span>
+          </div>
+          <i class="fas fa-chevron-down nav-section-icon"></i>
+        </div>
+        <div class="nav-drills">
+          <a href="UI-Design/Section-2-HTML-CSS-Foundations/Drill-1/solution.html" class="nav-drill-link">Drill 1 - HTML & CSS Basics</a>
+          <a href="UI-Design/Section-2-HTML-CSS-Foundations/Drill-2/solution.html" class="nav-drill-link">Drill 2 - Layout & Positioning</a>
+          <a href="UI-Design/Section-2-HTML-CSS-Foundations/Drill-3/solution.html" class="nav-drill-link">Drill 3 - Colors & Styling</a>
+          <a href="UI-Design/Section-2-HTML-CSS-Foundations/Drill-4/solution.html" class="nav-drill-link">Drill 4 - Advanced Styling</a>
+          <a href="UI-Design/Section-2-HTML-CSS-Foundations/Mini-Project/solution.html" class="nav-drill-link">Mini Project - Capstone</a>
+        </div>
+      </div>
+
+      <!-- Section 3 -->
+      <div class="nav-section">
+        <div class="nav-section-header" data-section="section-3">
+          <div class="nav-section-title">
+            <div class="nav-section-number">3</div>
+            <span>Typography</span>
+          </div>
+          <i class="fas fa-chevron-down nav-section-icon"></i>
+        </div>
+        <div class="nav-drills">
+          <a href="UI-Design/Section-3-Typography/Drill-1/solution.html" class="nav-drill-link">Drill 1 - System vs Web Fonts</a>
+          <a href="UI-Design/Section-3-Typography/Drill-2/solution.html" class="nav-drill-link">Drill 2 - Google Fonts & Variable Axes</a>
+          <a href="UI-Design/Section-3-Typography/Drill-3/solution.html" class="nav-drill-link">Drill 3 - Local Font with @font-face</a>
+          <a href="UI-Design/Section-3-Typography/Drill-4/solution.html" class="nav-drill-link">Drill 4 - Hierarchy & Rhythm</a>
+          <a href="UI-Design/Section-3-Typography/Drill-5-Code-Blocks-Emphasis/solution.html" class="nav-drill-link">Drill 5 - Code Blocks & Emphasis</a>
+        </div>
       </div>
     </nav>
   </aside>
@@ -37,12 +80,12 @@
       <p>Explore my web development journey through carefully crafted projects</p>
     </div>
 
-    <!-- UI Design Section -->
-    <section class="section">
-      <div class="section-title" onclick="toggleSection(this)">
+    <!-- Section 1 -->
+    <section class="section" id="section-1">
+      <div class="section-title">
         <i class="fas fa-chevron-down"></i>
-        <h2>UI Design</h2>
-        <span class="drill-count">10 Drills</span>
+        <h2>Section 1: Basics</h2>
+        <span class="drill-count">1 Drill</span>
       </div>
       <div class="drill-list">
         <a href="UI-Design/Section-1-Basics/Drill-1/solution.html" class="drill-card">
@@ -51,7 +94,7 @@
               <i class="fas fa-lightbulb"></i>
             </div>
             <div>
-              <div class="drill-name">Section 1: Basics</div>
+              <div class="drill-name">Drill 1</div>
               <div class="drill-description">Foundation concepts</div>
             </div>
           </div>
@@ -59,14 +102,24 @@
             View Project <i class="fas fa-arrow-right"></i>
           </span>
         </a>
+      </div>
+    </section>
 
+    <!-- Section 2 -->
+    <section class="section" id="section-2">
+      <div class="section-title">
+        <i class="fas fa-chevron-down"></i>
+        <h2>Section 2: HTML & CSS Foundations</h2>
+        <span class="drill-count">5 Drills</span>
+      </div>
+      <div class="drill-list">
         <a href="UI-Design/Section-2-HTML-CSS-Foundations/Drill-1/solution.html" class="drill-card">
           <div style="display: flex; align-items: center; gap: 1rem;">
             <div class="drill-icon">
               <i class="fas fa-cube"></i>
             </div>
             <div>
-              <div class="drill-name">Section 2: Drill 1</div>
+              <div class="drill-name">Drill 1</div>
               <div class="drill-description">HTML & CSS Basics</div>
             </div>
           </div>
@@ -81,7 +134,7 @@
               <i class="fas fa-layer-group"></i>
             </div>
             <div>
-              <div class="drill-name">Section 2: Drill 2</div>
+              <div class="drill-name">Drill 2</div>
               <div class="drill-description">Layout & Positioning</div>
             </div>
           </div>
@@ -96,7 +149,7 @@
               <i class="fas fa-palette"></i>
             </div>
             <div>
-              <div class="drill-name">Section 2: Drill 3</div>
+              <div class="drill-name">Drill 3</div>
               <div class="drill-description">Colors & Styling</div>
             </div>
           </div>
@@ -111,7 +164,7 @@
               <i class="fas fa-pen-fancy"></i>
             </div>
             <div>
-              <div class="drill-name">Section 2: Drill 4</div>
+              <div class="drill-name">Drill 4</div>
               <div class="drill-description">Advanced Styling</div>
             </div>
           </div>
@@ -126,7 +179,7 @@
               <i class="fas fa-star"></i>
             </div>
             <div>
-              <div class="drill-name">Section 2: Mini Project</div>
+              <div class="drill-name">Mini Project</div>
               <div class="drill-description">Capstone project</div>
             </div>
           </div>
@@ -134,14 +187,24 @@
             View Project <i class="fas fa-arrow-right"></i>
           </span>
         </a>
-          
+      </div>
+    </section>
+
+    <!-- Section 3 -->
+    <section class="section" id="section-3">
+      <div class="section-title">
+        <i class="fas fa-chevron-down"></i>
+        <h2>Section 3: Typography</h2>
+        <span class="drill-count">5 Drills</span>
+      </div>
+      <div class="drill-list">
         <a href="UI-Design/Section-3-Typography/Drill-1/solution.html" class="drill-card">
           <div style="display: flex; align-items: center; gap: 1rem;">
             <div class="drill-icon">
-              <i class="fas fa-pen-fancy"></i>
+              <i class="fas fa-font"></i>
             </div>
             <div>
-              <div class="drill-name">Section 3: Drill 1</div>
+              <div class="drill-name">Drill 1</div>
               <div class="drill-description">System vs Web Fonts</div>
             </div>
           </div>
@@ -153,10 +216,10 @@
         <a href="UI-Design/Section-3-Typography/Drill-2/solution.html" class="drill-card">
           <div style="display: flex; align-items: center; gap: 1rem;">
             <div class="drill-icon">
-              <i class="fas fa-pen-fancy"></i>
+              <i class="fas fa-text-height"></i>
             </div>
             <div>
-              <div class="drill-name">Section 3: Drill 2</div>
+              <div class="drill-name">Drill 2</div>
               <div class="drill-description">Google Fonts & Variable Axes</div>
             </div>
           </div>
@@ -168,10 +231,10 @@
         <a href="UI-Design/Section-3-Typography/Drill-3/solution.html" class="drill-card">
           <div style="display: flex; align-items: center; gap: 1rem;">
             <div class="drill-icon">
-              <i class="fas fa-pen-fancy"></i>
+              <i class="fas fa-file-import"></i>
             </div>
             <div>
-              <div class="drill-name">Section 3: Drill 3</div>
+              <div class="drill-name">Drill 3</div>
               <div class="drill-description">Local Font with @font-face</div>
             </div>
           </div>
@@ -183,10 +246,10 @@
         <a href="UI-Design/Section-3-Typography/Drill-4/solution.html" class="drill-card">
           <div style="display: flex; align-items: center; gap: 1rem;">
             <div class="drill-icon">
-              <i class="fas fa-pen-fancy"></i>
+              <i class="fas fa-layer-group"></i>
             </div>
             <div>
-              <div class="drill-name">Section 3: Drill 4</div>
+              <div class="drill-name">Drill 4</div>
               <div class="drill-description">Hierarchy & Rhythm</div>
             </div>
           </div>
@@ -198,18 +261,17 @@
         <a href="UI-Design/Section-3-Typography/Drill-5-Code-Blocks-Emphasis/solution.html" class="drill-card">
           <div style="display: flex; align-items: center; gap: 1rem;">
             <div class="drill-icon">
-              <i class="fas fa-pen-fancy"></i>
+              <i class="fas fa-code"></i>
             </div>
             <div>
-              <div class="drill-name">Section 3: Drill 5</div>
-              <div class="drill-description">Code Blocks & Emphasis </div>
+              <div class="drill-name">Drill 5</div>
+              <div class="drill-description">Code Blocks & Emphasis</div>
             </div>
           </div>
           <span class="drill-link">
             View Project <i class="fas fa-arrow-right"></i>
           </span>
         </a>
-
       </div>
     </section>
   </main>
@@ -217,15 +279,17 @@
   <script>
     const navToggle = document.getElementById('navToggle');
     const sidebar = document.getElementById('sidebar');
-    const navLinks = document.querySelectorAll('.nav-link');
+    const navSectionHeaders = document.querySelectorAll('.nav-section-header');
+    const sectionTitles = document.querySelectorAll('.section-title');
 
     // Toggle sidebar on mobile
     navToggle.addEventListener('click', () => {
       sidebar.classList.toggle('active');
     });
 
-    // Close sidebar when clicking on a link
-    navLinks.forEach(link => {
+    // Close sidebar when clicking on a drill link (mobile)
+    const drillLinks = document.querySelectorAll('.nav-drill-link');
+    drillLinks.forEach(link => {
       link.addEventListener('click', () => {
         if (window.innerWidth <= 768) {
           sidebar.classList.remove('active');
@@ -233,22 +297,43 @@
       });
     });
 
-    // Toggle section visibility
-    function toggleSection(element) {
-      const drillList = element.nextElementSibling;
-      element.classList.toggle('collapsed');
-      drillList.classList.toggle('hidden');
-    }
+    // Toggle section drills in sidebar
+    navSectionHeaders.forEach(header => {
+      header.addEventListener('click', () => {
+        const drillsContainer = header.nextElementSibling;
+        header.classList.toggle('collapsed');
+        drillsContainer.classList.toggle('collapsed');
+        
+        // Update active state
+        navSectionHeaders.forEach(h => h.classList.remove('active'));
+        header.classList.add('active');
 
-    // Update active nav item
-    navLinks.forEach(link => {
-      link.addEventListener('click', (e) => {
-        navLinks.forEach(l => l.classList.remove('active'));
-        link.classList.add('active');
+        // Scroll to section in main content
+        const sectionId = header.getAttribute('data-section');
+        const section = document.getElementById(sectionId);
+        if (section) {
+          section.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        }
+
+        // Close sidebar on mobile after click
+        if (window.innerWidth <= 768) {
+          setTimeout(() => {
+            sidebar.classList.remove('active');
+          }, 300);
+        }
       });
     });
 
-    // Add smooth scroll
+    // Toggle section visibility in main content
+    sectionTitles.forEach(title => {
+      title.addEventListener('click', () => {
+        const drillList = title.nextElementSibling;
+        title.classList.toggle('collapsed');
+        drillList.classList.toggle('hidden');
+      });
+    });
+
+    // Smooth scroll
     document.documentElement.style.scrollBehavior = 'smooth';
   </script>
 </body>
