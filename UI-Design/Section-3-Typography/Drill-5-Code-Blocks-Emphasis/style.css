@@ -1,0 +1,59 @@
+/* Root variables */
+:root {
+  --color-surface: #f4f4f8;
+  --color-text: #222;
+  --color-accent: #3b82f6;
+  --color-quote-border: #9ca3af;
+  --font-body: "Inter", system-ui, sans-serif;
+  --font-mono: "Source Code Pro", ui-monospace, monospace;
+}
+
+/* Body setup */
+body {
+  font-family: var(--font-body);
+  color: var(--color-text);
+  background: white;
+  line-height: 1.6;
+  padding: 2rem;
+  max-width: 700px;
+  margin: auto;
+}
+
+/* Headings */
+h1, h2 {
+  color: var(--color-accent);
+  margin-top: 2rem;
+}
+
+/* Inline code */
+code {
+  background: #eef2ff;
+  padding: 0.2rem 0.4rem;
+  border-radius: 4px;
+  font-family: var(--font-mono);
+  font-size: 0.95em;
+}
+
+/* Code block styling */
+pre {
+  background: var(--color-surface);
+  padding: 1rem;
+  overflow-x: auto;
+  border-radius: 6px;
+  margin: 1.5rem 0;
+}
+
+pre code {
+  font-family: var(--font-mono);
+  color: #1e293b;
+}
+
+/* Blockquote styling */
+blockquote {
+  border-left: 4px solid var(--color-quote-border);
+  padding-left: 1rem;
+  margin: 1.5rem 0;
+  font-style: italic;
+  color: #444;
+  line-height: 1.8;
+}
