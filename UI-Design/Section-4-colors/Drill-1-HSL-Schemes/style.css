@@ -1,0 +1,76 @@
+/* Root color tokens using HSL */
+:root {
+  /* Base Theme */
+  --color-bg: hsl(210, 20%, 98%);
+  --color-surface: hsl(210, 15%, 95%);
+  --color-text: hsl(210, 15%, 20%);
+  --color-accent: hsl(200, 80%, 50%);
+
+  /* Monochrome variations (same hue, different lightness/saturation) */
+  --mono-1: hsl(200, 80%, 95%);
+  --mono-2: hsl(200, 80%, 85%);
+  --mono-3: hsl(200, 80%, 70%);
+
+  /* Complementary (accent + opposite hue) */
+  --comp-main: hsl(200, 80%, 50%);
+  --comp-contrast: hsl(20, 80%, 50%);
+
+  /* Triad (three hues evenly spaced) */
+  --triad-1: hsl(200, 80%, 50%);
+  --triad-2: hsl(320, 70%, 55%);
+  --triad-3: hsl(80, 70%, 55%);
+}
+
+/* Layout setup */
+body {
+  font-family: system-ui, sans-serif;
+  background: var(--color-bg);
+  color: var(--color-text);
+  margin: 0;
+  padding: 2rem;
+}
+
+.container {
+  display: grid;
+  gap: 2rem;
+  max-width: 900px;
+  margin: auto;
+}
+
+/* Card styling */
+.card {
+  background: var(--color-surface);
+  padding: 1.5rem;
+  border-radius: 1rem;
+  box-shadow: 0 4px 10px hsl(210, 20%, 90%);
+  transition: transform 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+/* Monochrome card */
+.card.mono {
+  border-left: 8px solid var(--mono-3);
+  background: var(--mono-1);
+}
+
+/* Complementary card */
+.card.comp {
+  border-left: 8px solid var(--comp-contrast);
+  background: var(--comp-main);
+  color: white;
+}
+
+/* Triadic card */
+.card.triad {
+  background: linear-gradient(135deg, var(--triad-1), var(--triad-2), var(--triad-3));
+  color: white;
+}
+
+/* Heading accent */
+h1 {
+  color: var(--color-accent);
+  text-align: center;
+}
