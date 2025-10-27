@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Typography — Drill 2: Google Fonts & Variable Axes</title>
+  <link rel="stylesheet" href="style.css">
+
+  <!-- Import Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Merriweather:wght@300;400;700&family=Source+Code+Pro:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+  <h1>Google Fonts & Variable Axes</h1>
+  <h2>Dynamic Font Weight Control</h2>
+
+  <section>
+    <p id="sample-text">
+      This paragraph demonstrates the Inter variable font. Use the slider below to adjust its weight dynamically!
+    </p>
+
+    <label for="weightRange">Font Weight: </label>
+    <input type="range" id="weightRange" min="100" max="900" value="400" step="100">
+    <span id="currentWeight">400</span>
+  </section>
+
+  <pre><code>
+function sayHello() {
+  console.log("Typography Drill 2 Loaded!");
+}
+  </code></pre>
+
+  <script src="font-weight.js"></script>
+</body>
+</html>
