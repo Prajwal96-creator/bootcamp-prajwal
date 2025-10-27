@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Icons — Fonts vs SVG</title>
+
+  <!--  Material Symbols Webfont -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined"
+    rel="stylesheet"
+  />
+
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1> Icon Fonts vs SVG</h1>
+    <p>Testing accessibility, control, and styling.</p>
+  </header>
+
+  <main class="icon-demo">
+    <!--  Icon Fonts -->
+    <span class="material-symbols-outlined icon">home</span>
+    <span class="material-symbols-outlined icon">favorite</span>
+    <span class="material-symbols-outlined icon">settings</span>
+
+    <!--  Inline SVG (Heroicons) -->
+    <svg class="icon svg-icon" xmlns="http://www.w3.org/2000/svg"
+      viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+      aria-label="User profile icon" role="img">
+      <circle cx="12" cy="8" r="4"></circle>
+      <path d="M4 20c0-4 4-6 8-6s8 2 8 6"></path>
+    </svg>
+  </main>
+</body>
+</html>
