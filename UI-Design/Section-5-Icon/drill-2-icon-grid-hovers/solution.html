@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Drill 2 — Icon Grid & Hovers</title>
+
+  <!-- Google Material Symbols -->
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <h1> Icon Grid & Hover States</h1>
+
+  <section class="icon-grid">
+    <!-- Icon Fonts -->
+    <button class="icon-btn" aria-label="Home">
+      <span class="material-symbols-outlined">home</span>
+    </button>
+    <button class="icon-btn" aria-label="Favorite">
+      <span class="material-symbols-outlined">favorite</span>
+    </button>
+    <button class="icon-btn" aria-label="Settings">
+      <span class="material-symbols-outlined">settings</span>
+    </button>
+
+    <!-- Inline SVGs -->
+    <button class="icon-btn" aria-label="User profile">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
+           fill="none" stroke="currentColor" stroke-width="2"
+           stroke-linecap="round" stroke-linejoin="round">
+        <circle cx="12" cy="8" r="4" />
+        <path d="M4 20c0-4 4-6 8-6s8 2 8 6" />
+      </svg>
+    </button>
+
+    <button class="icon-btn" aria-label="Mail">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
+           fill="none" stroke="currentColor" stroke-width="2"
+           stroke-linecap="round" stroke-linejoin="round">
+        <rect x="3" y="5" width="18" height="14" rx="2" ry="2" />
+        <polyline points="3,7 12,13 21,7" />
+      </svg>
+    </button>
+
+    <button class="icon-btn" aria-label="Search">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
+           fill="none" stroke="currentColor" stroke-width="2"
+           stroke-linecap="round" stroke-linejoin="round">
+        <circle cx="11" cy="11" r="8" />
+        <line x1="21" y1="21" x2="16.65" y2="16.65" />
+      </svg>
+    </button>
+  </section>
+</body>
+</html>
