@@ -1,0 +1,16 @@
+### Task: Find the latest press release
+
+#### Ideal Flow (5 Steps)
+1. Land on homepage → see “Press Releases” in top navbar.
+2. Click “Press Releases” → list appears, sorted newest first.
+3. Find latest headline/date clearly visible.
+4. Click "View Press Release →" → full article opens.
+
+#### Friction Points in Current Page
+- Lack of hover/focus feedback on links/buttons.
+
+#### Fixes Applied
+- Moved Press link to top navbar.
+- Added publication date.
+- Changed button text to “View Press Release →”.
+- Styled hover/focus states for links and buttons.
