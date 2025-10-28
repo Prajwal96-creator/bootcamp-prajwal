@@ -1,0 +1,40 @@
+:root {
+  --space-1: 0.5rem;
+  --space-2: 1rem;
+  --space-3: 2rem;
+  --radius: 0.75rem;
+}
+
+body {
+  font-family: system-ui, sans-serif;
+  margin: 0;
+  background: #fafafa;
+  color: #222;
+}
+
+.hero {
+  text-align: center;
+  padding: var(--space-3);
+  background: linear-gradient(135deg, #a5c9ff, #c2f0ff);
+}
+
+.grid {
+  display: grid;
+  gap: var(--space-2);
+  padding: var(--space-3);
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+}
+
+.card {
+  background: white;
+  padding: var(--space-2);
+  border-radius: var(--radius);
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  text-align: center;
+}
+
+.footer {
+  text-align: center;
+  padding: var(--space-2);
+  background: #eee;
+}
