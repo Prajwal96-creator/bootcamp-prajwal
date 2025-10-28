@@ -1,0 +1,59 @@
+/* Global reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: system-ui, sans-serif;
+  background-color: var(--bg, #fff);
+  color: var(--text, #111);
+  line-height: 1.6;
+}
+
+/* Full-bleed hero section */
+.hero {
+  position: relative;
+  height: 80vh;
+  background: url("assets/hero.jpg") center/cover no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: white;
+  overflow: hidden;
+}
+
+/* Overlay gradient for readability */
+.hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    rgba(0, 0, 0, 0.5),
+    rgba(0, 0, 0, 0.2)
+  );
+  z-index: 1;
+}
+
+/* Hero text */
+.hero h1 {
+  font-size: clamp(2rem, 5vw, 4rem);
+  font-weight: 700;
+  z-index: 2;
+  position: relative;
+}
+
+/* Light/Dark theme toggle simulation */
+:root[data-theme="dark"] {
+  --bg: #111;
+  --text: #eee;
+}
+
+:root[data-theme="dark"] .hero::before {
+  background: linear-gradient(
+    rgba(255, 255, 255, 0.25),
+    rgba(0, 0, 0, 0.5)
+  );
+}
