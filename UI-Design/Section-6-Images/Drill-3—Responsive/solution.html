@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Responsive Picture Example</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <section class="hero">
+    <picture>
+      <!-- For WebP supported browsers -->
+      <source 
+        type="image/webp"
+        srcset="
+          images/hero-small.webp 600w,
+          images/hero-medium.webp 1000w,
+          images/hero-large.webp 1500w
+        "
+        sizes="(max-width: 600px) 100vw, 
+               (max-width: 1200px) 80vw, 
+               60vw">
+
+      <!-- Fallback for older browsers -->
+      <source 
+        type="image/jpeg"
+        srcset="
+          images/hero-small.jpg 600w,
+          images/hero-medium.jpg 1000w,
+          images/hero-large.jpg 1500w
+        "
+        sizes="(max-width: 600px) 100vw, 
+               (max-width: 1200px) 80vw, 
+               60vw">
+
+      <!-- Default image -->
+      <img 
+        src="images/hero-medium.jpg" 
+        alt="Mountain landscape"
+        loading="lazy"
+        decoding="async" />
+    </picture>
+
+    <h1 class="hero-title">Experience Nature</h1>
+  </section>
+
+</body>
+</html>
