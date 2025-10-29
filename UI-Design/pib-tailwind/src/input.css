@@ -1,0 +1,17 @@
+@import "tailwindcss";
+
+@theme {
+  --color-brand: oklch(0.62 0.15 320);
+}
+
+/* Light & Dark Themes */
+@layer base {
+  :root {
+    --bg: oklch(0.98 0.01 255);
+    --text: oklch(0.21 0.02 255);
+  }
+  :root.dark {
+    --bg: oklch(0.12 0.02 255);
+    --text: oklch(0.93 0.01 255);
+  }
+}

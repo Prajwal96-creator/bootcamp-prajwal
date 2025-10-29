@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Tailwind v4 Setup Demo</title>
+    <link rel="stylesheet" href="./dist/tailwind.css" />
+    <style>
+      body {
+        background: var(--bg);
+        color: var(--text);
+      }
+    </style>
+  </head>
+  <body class="min-h-screen flex flex-col items-center justify-center gap-4">
+    <h1 class="text-3xl font-bold text-brand">Hello Tailwind v4!</h1>
+    <button
+      id="themeToggle"
+      class="px-4 py-2 bg-brand/80 text-white rounded hover:bg-brand transition focus:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-brand/60"
+    >
+      Toggle Theme
+    </button>
+
+    <script>
+      const html = document.documentElement;
+      document.getElementById('themeToggle').addEventListener('click', () => {
+        html.classList.toggle('dark');
+      });
+    </script>
+  </body>
+</html>
